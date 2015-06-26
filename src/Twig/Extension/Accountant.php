@@ -26,13 +26,13 @@ class Accountant extends Twig_Extension
      */
     public function getFunctions()
     {
-        return [
-            new Twig_SimpleFunction('add_money', [$this, 'add']),
-            new Twig_SimpleFunction('subtract_money', [$this, 'subtract']),
-            new Twig_SimpleFunction('multiply_money', [$this, 'multiply']),
-            new Twig_SimpleFunction('divide_money', [$this, 'divide']),
-            new Twig_SimpleFunction('sum_monies', [$this, 'sum']),
-        ];
+        return array(
+            new Twig_SimpleFunction('add_money', array($this, 'add')),
+            new Twig_SimpleFunction('subtract_money', array($this, 'subtract')),
+            new Twig_SimpleFunction('multiply_money', array($this, 'multiply')),
+            new Twig_SimpleFunction('divide_money', array($this, 'divide')),
+            new Twig_SimpleFunction('sum_monies', array($this, 'sum')),
+        );
     }
 
     /**
