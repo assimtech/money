@@ -1,5 +1,9 @@
 # Money
 
+[![Build Status](https://travis-ci.org/assimtech/money.svg?branch=master)](https://travis-ci.org/assimtech/money)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/assimtech/money/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/assimtech/money/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/assimtech/money/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/assimtech/money/?branch=master)
+
 Provides models for representing Money and an Accountant performing arithmetic on Money without causing rounding errors
 
 ## The Models
