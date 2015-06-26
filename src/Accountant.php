@@ -13,7 +13,7 @@ class Accountant
      */
     protected function checkCurrenciesMatch(Money $money1, Money $money2)
     {
-        if ((string)$money1->getCurrency() !== (string)$money2->getCurrency()) {
+        if ($money1->getCurrency()->getCode() !== $money2->getCurrency()->getCode()) {
             throw new InvalidArgumentException(sprintf(
                 'Cannot work with monies of differing currencies (%s, %s)',
                 $money1,

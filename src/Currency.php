@@ -34,6 +34,14 @@ class Currency
     }
 
     /**
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    /**
      * @return integer
      */
     public function getFractionDigits()

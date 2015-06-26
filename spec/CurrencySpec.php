@@ -20,6 +20,13 @@ class CurrencySpec extends ObjectBehavior
         $this->__toString()->shouldReturn('USD');
     }
 
+    function it_has_an_iso_code()
+    {
+        $this->beConstructedWith('USD');
+
+        $this->getCode()->shouldReturn('USD');
+    }
+
     function it_has_fraction_digits()
     {
         $this->beConstructedWith('USD');
