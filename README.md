@@ -11,40 +11,63 @@ Provides models for representing Money and an Accountant performing arithmetic o
 
 ### Currency
 
-    $usd = new Assimtech\Money\Currency('USD');
-    echo (string)$usd; // Outputs USD
-    echo $usd->getFractionDigits(); // Outputs 2
+```php
+$usd = new Assimtech\Money\Currency('USD');
+echo (string)$usd; // Outputs USD
+echo $usd->getFractionDigits(); // Outputs 2
 
-    $jpy = new Assimtech\Money\Currency('JPY');
-    echo $jpy->getFractionDigits(); // Outputs 0
+$jpy = new Assimtech\Money\Currency('JPY');
+echo $jpy->getFractionDigits(); // Outputs 0
 
-    $iqd = new Assimtech\Money\Currency('IQD');
-    echo $iqd->getFractionDigits(); // Outputs 3
+$iqd = new Assimtech\Money\Currency('IQD');
+echo $iqd->getFractionDigits(); // Outputs 3
+```
 
 
 ### Money
 
-    // assuming Locale is en-US
-    $money = new Money(pi(), $usd);
-    echo (string)$money; // Outputs 3.14 USD
-    echo $money->getFormattedAmount(); // Outputs 3.14
-    echo $money->getFormattedAmount('de-DE'); // Outputs 3,14
+```php
+// assuming Locale is en-US
+$money = new Money(pi(), $usd);
+echo (string)$money; // Outputs 3.14 USD
+echo $money->getFormattedAmount(); // Outputs 3.14
+echo $money->getFormattedAmount('de-DE'); // Outputs 3,14
+```
 
 
 ## The Accountant
 
-    $accountant = new Assimtech\Money\Accountant();
+```php
+$accountant = new Assimtech\Money\Accountant();
 
-    $threeUSD = $accountant->add($oneUSD, $twoUSD);
+$threeUSD = $accountant->add($oneUSD, $twoUSD);
 
-    $sixUSD = $accountant->subtract($tenUSD, $fourUSD);
+$sixUSD = $accountant->subtract($tenUSD, $fourUSD);
 
-    $eightUSD = $accountant->multiply($fourUSD, 2);
+$eightUSD = $accountant->multiply($fourUSD, 2);
 
-    $threeUSD = $accountant->divide($nineUSD, 3);
+$threeUSD = $accountant->divide($nineUSD, 3);
 
-    $sixUSD = $accountant->sum(array(
-        $oneUSD,
-        $twoUSD,
-        $threeUSD,
-    ));
+$sixUSD = $accountant->sum(array(
+    $oneUSD,
+    $twoUSD,
+    $threeUSD,
+));
+```
+
+
+## Twig extension
+
+The accountant is also exposed as a Twig extension
+
+```twig
+{{ add_money(money1, money2) }}
+
+{{ subtract_money(money1, money2) }}
+
+{{ multiply_money(money, fraction) }}
+
+{{ divide_money(money, fraction) }}
+
+{{ sum_money([ money1, money2, money3 ]) }}
+```
