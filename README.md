@@ -71,3 +71,8 @@ The accountant is also exposed as a Twig extension
 
 {{ sum_money([ money1, money2, money3 ]) }}
 ```
+
+
+## Frameworks
+
+Please see [MoneyBundle](https://github.com/assimtech/money-bundle) for integration with Symfony 2
