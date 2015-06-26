@@ -1,3 +1,4 @@
+---
 suites:
     AssimtechMoney:
         namespace: Assimtech\Money
