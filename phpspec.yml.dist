@@ -1,0 +1,4 @@
+suites:
+    AssimtechMoney:
+        namespace: Assimtech\Money
+        psr4_prefix: Assimtech\Money

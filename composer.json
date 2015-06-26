@@ -1,0 +1,24 @@
+{
+    "name": "assimtech/money",
+    "type": "library",
+    "description": "Money, Currency and Accounting",
+    "homepage": "https://github.com/assimtech/money",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+
+        "symfony/intl": "~2.0"
+    },
+    "require-dev": {
+        "sebastian/phpcpd": "~2.0",
+        "squizlabs/php_codesniffer": "~2.3",
+        "phpmd/phpmd": "~2.2",
+        "phpspec/phpspec": "~2.2",
+        "henrikbjorn/phpspec-code-coverage": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Assimtech\\Money\\": "src"
+        }
+    }
+}
