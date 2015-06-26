@@ -6,6 +6,7 @@
 
 Provides models for representing Money and an Accountant performing arithmetic on Money without causing rounding errors
 
+
 ## The Models
 
 ### Currency
