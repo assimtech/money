@@ -12,5 +12,3 @@ code_coverage:
         - html
     output:
         html: coverage
-    blacklist:
-        - src/Phar

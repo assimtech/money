@@ -12,5 +12,3 @@ code_coverage:
         - clover
     output:
         clover: coverage/clover.xml
-    blacklist:
-        - src/Phar
