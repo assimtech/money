@@ -6,7 +6,7 @@
 
 Provides models for representing Money and an Accountant performing arithmetic on Money without causing rounding errors
 
-** THIS REPOSITORY HAS BEEN MOVED TO [Assimtech\Fiat](https://github.com/assimtech/fiat) **
+**THIS REPOSITORY HAS BEEN MOVED TO [Assimtech\Fiat](https://github.com/assimtech/fiat)**
 
 The last version of `Assimtech\Money` is `1.1.3`, `Assimtech\Fiat` follows on from `2.0.0`. The move is due to the naming of `Assimtech\Money\Money`.
 
